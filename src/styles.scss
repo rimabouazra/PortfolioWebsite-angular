@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+.container{
+    max-width: 1140px;
+    margin-top: 20px;
+
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    //color: #007bff !important; // Adjust this color as needed
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+.tag{
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}

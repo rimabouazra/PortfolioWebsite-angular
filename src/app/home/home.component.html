@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/defaultProfile.jpeg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <p>Software engineering student at the Higher Institute of Computer Science and Mathematics of Monastir, passionate about web development. Hands-on experience with Angular and familiar with front-end and back-end technologies. Motivated, organized and eager to contribute to innovative projects while developing my technical skills.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredproject.name}}</h4>
+                <carousel>
+                    <div *ngFor="let picture of featuredproject.pictures">
+                        <slide><img [src]="picture" alt="slide" style="display: block;width:100%;"></slide>
+            
+                    </div>
+                    
+                </carousel>
+                <p class="mt-2">{{featuredproject.summary}}</p>
+                <p>Visit the portfolio section to learn more!</p>
+            </div>
+        </div>
+    </div>
+</div>
